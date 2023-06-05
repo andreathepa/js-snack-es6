@@ -54,7 +54,9 @@ console.log(bici_corsa);
 let bici_leggera = bici_corsa[0];
 
 for (let i = 1; i < bici_corsa.length; i++) {
-  const { peso } = bici_corsa[i];
+
+  let { peso } = bici_corsa[i];
+  
   if (peso < bici_leggera.peso) {
     bici_leggera = bici_corsa[i];
   }
