@@ -16,6 +16,24 @@ const students = [     {         'id': '213',         'name': 'Marco della Rover
 
 console.log(students)
 
+//Uppercase names
+
 const plates = students.map((student) => student.name.toUpperCase());
 
 console.log(plates)
+
+//Grade Over 70
+
+const best_student = students.filter((student) => {
+    return student.grades > 70
+})
+
+console.log(best_student)
+
+//Grade id over 70-120
+
+const top_student = students.filter((student) => {
+    return student.grades > 70 && student.id >120
+})
+
+console.log(top_student)
