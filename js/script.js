@@ -37,3 +37,27 @@ const top_student = students.filter((student) => {
 })
 
 console.log(top_student)
+
+//Snack 3
+
+const bici_corsa = [
+    {nome: 'Cube', peso: 10},
+    {nome: 'Focus', peso: 12},
+    {nome: 'Factor', peso: 9},
+    {nome: 'Ghost', peso: 6},
+    {nome: 'Gt', peso: 7},
+
+];
+
+console.log(bici_corsa);
+
+let bici_leggera = bici_corsa[0];
+
+for (let i = 1; i < bici_corsa.length; i++) {
+  const { peso } = bici_corsa[i];
+  if (peso < bici_leggera.peso) {
+    bici_leggera = bici_corsa[i];
+  }
+};
+
+console.log(`La bici più leggera è ${bici_leggera.nome} con un peso di ${bici_leggera.peso} kg.`);
