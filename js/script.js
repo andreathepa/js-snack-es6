@@ -97,4 +97,13 @@ console.log(teams)
 
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+let bad_teams = [];
 
+for (let i = 1; i < teams.length; i++) {
+
+  let { nome, falli } = teams[i];
+
+  bad_teams.push({nome, falli});
+};
+
+console.log(bad_teams);
