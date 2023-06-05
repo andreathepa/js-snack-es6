@@ -56,10 +56,11 @@ let bici_leggera = bici_corsa[0];
 for (let i = 1; i < bici_corsa.length; i++) {
 
   let { peso } = bici_corsa[i];
-  
+
   if (peso < bici_leggera.peso) {
     bici_leggera = bici_corsa[i];
   }
 };
 
 console.log(`La bici più leggera è ${bici_leggera.nome} con un peso di ${bici_leggera.peso} kg.`);
+
